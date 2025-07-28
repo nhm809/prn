@@ -5034,11 +5034,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FUMiniLongChauSystem\\DAL\\DAL.csproj",
+      "projectUniqueName": "E:\\prn-project\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\FUMiniLongChauSystem\\DAL\\DAL.csproj",
+      "projectPath": "E:\\prn-project\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\FUMiniLongChauSystem\\DAL\\obj\\",
+      "outputPath": "E:\\prn-project\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -89,18 +89,18 @@ namespace FUMiniLongChauSystem
                 var border = new Border
                 {
                     BorderThickness = new Thickness(1),
-                    BorderBrush = System.Windows.Media.Brushes.LightGray,
+                    BorderBrush = Brushes.LightGray,
                     Margin = new Thickness(10),
                     Padding = new Thickness(10),
                     Width = 200,
-                    Background = System.Windows.Media.Brushes.White,
+                    Background = Brushes.White,
                     CornerRadius = new CornerRadius(8)
                 };
 
                 var stack = new StackPanel();
 
-                var imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
-                string.IsNullOrEmpty(product.ImageUrl) ? "Assets/noimage.jpg" : product.ImageUrl);
+                string imageFile = string.IsNullOrWhiteSpace(product.ImageUrl) ? "Assets/noimage.jpg" : product.ImageUrl;
+                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imageFile);
 
                 if (File.Exists(imagePath))
                 {
@@ -113,7 +113,16 @@ namespace FUMiniLongChauSystem
                     };
                     stack.Children.Add(image);
                 }
-
+                else
+                {
+                    stack.Children.Add(new TextBlock
+                    {
+                        Text = "Không tìm thấy ảnh",
+                        Foreground = Brushes.Red,
+                        FontSize = 11,
+                        TextAlignment = TextAlignment.Center
+                    });
+                }
 
                 stack.Children.Add(new TextBlock
                 {
@@ -127,7 +136,7 @@ namespace FUMiniLongChauSystem
                 stack.Children.Add(new TextBlock
                 {
                     Text = $"{product.Price:C}",
-                    Foreground = System.Windows.Media.Brushes.Green,
+                    Foreground = Brushes.Green,
                     FontWeight = FontWeights.SemiBold,
                     Margin = new Thickness(0, 0, 0, 4)
                 });
@@ -154,7 +163,7 @@ namespace FUMiniLongChauSystem
                     FontSize = 12,
                     Padding = new Thickness(6, 2, 6, 2),
                     Margin = new Thickness(0, 0, 5, 0),
-                    Background = System.Windows.Media.Brushes.LightGreen,
+                    Background = Brushes.LightGreen,
                     Cursor = System.Windows.Input.Cursors.Hand,
                     Tag = product
                 };
@@ -165,7 +174,7 @@ namespace FUMiniLongChauSystem
                     Content = "🔍 Xem",
                     FontSize = 12,
                     Padding = new Thickness(6, 2, 6, 2),
-                    Background = System.Windows.Media.Brushes.LightSkyBlue,
+                    Background = Brushes.LightSkyBlue,
                     Cursor = System.Windows.Input.Cursors.Hand,
                     Tag = product
                 };
@@ -180,7 +189,6 @@ namespace FUMiniLongChauSystem
                 ProductWrapPanel.Children.Add(border);
             }
         }
-
 
         private void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
@@ -199,8 +207,6 @@ namespace FUMiniLongChauSystem
                 // TODO: Hiển thị cửa sổ chi tiết sản phẩm
             }
         }
-
-
 
         private void CategoryListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
