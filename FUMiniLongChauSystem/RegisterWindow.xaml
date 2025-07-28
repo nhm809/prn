@@ -1,0 +1,54 @@
+﻿<Window x:Class="FUMiniLongChauSystem.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Register - Mini Long Chau" Height="650" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Background="#F9F9F9">
+        <Border Padding="20" Background="White" CornerRadius="10" Margin="20"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Border.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+            </Border.Effect>
+
+            <StackPanel HorizontalAlignment="Center" Width="280">
+                <!-- Logo -->
+                <Image Source="pack://application:,,,/Assets/logo.png" Width="80" Height="80" Margin="0,0,0,10"/>
+
+                <!-- App title -->
+                <TextBlock Text="Create an Account"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Foreground="#2E86C1"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <!-- Full name -->
+                <TextBlock Text="Full Name" Margin="0,0,0,5"/>
+                <TextBox Name="FullNameTextBox" Margin="0,0,0,10" Padding="5"/>
+
+                <!-- Email -->
+                <TextBlock Text="Email" Margin="0,0,0,5"/>
+                <TextBox Name="EmailTextBox" Margin="0,0,0,10" Padding="5"/>
+
+                <!-- Phone -->
+                <TextBlock Text="Phone" Margin="0,0,0,5"/>
+                <TextBox Name="PhoneTextBox" Margin="0,0,0,10" Padding="5"/>
+
+                <!-- Password -->
+                <TextBlock Text="Password" Margin="0,0,0,5"/>
+                <PasswordBox Name="PasswordBox" Margin="0,0,0,10" Padding="5"/>
+
+                <!-- Confirm password -->
+                <TextBlock Text="Confirm Password" Margin="0,0,0,5"/>
+                <PasswordBox Name="ConfirmPasswordBox" Margin="0,0,0,20" Padding="5"/>
+
+                <!-- Register button -->
+                <Button Content="Register" Click="RegisterButton_Click"
+                        Height="35" Background="#2E86C1" Foreground="White"/>
+
+                <!-- Back to Login -->
+                <Button Content="Back to Login" Click="BackToLogin_Click"
+                        Height="35" Background="#EAECEE" Foreground="Black" Margin="0,10,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
