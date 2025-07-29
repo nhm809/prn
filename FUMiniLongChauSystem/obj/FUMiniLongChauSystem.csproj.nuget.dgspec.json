@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj": {}
+    "D:\\Code\\PRN212_GASM\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj": {}
   },
   "projects": {
-    "E:\\prn-project\\BLL\\BLL.csproj": {
+    "D:\\Code\\PRN212_GASM\\prn-project\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\prn-project\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\Code\\PRN212_GASM\\prn-project\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "E:\\prn-project\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\prn-project\\BLL\\obj\\",
+        "projectPath": "D:\\Code\\PRN212_GASM\\prn-project\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\PRN212_GASM\\prn-project\\BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\prn-project\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\prn-project\\DAL\\DAL.csproj"
+              "D:\\Code\\PRN212_GASM\\prn-project\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\Code\\PRN212_GASM\\prn-project\\DAL\\DAL.csproj"
               }
             }
           }
@@ -48,8 +43,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -70,25 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\prn-project\\DAL\\DAL.csproj": {
+    "D:\\Code\\PRN212_GASM\\prn-project\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\prn-project\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\Code\\PRN212_GASM\\prn-project\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\prn-project\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\prn-project\\DAL\\obj\\",
+        "projectPath": "D:\\Code\\PRN212_GASM\\prn-project\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\PRN212_GASM\\prn-project\\DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +86,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,8 +103,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -162,25 +150,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj": {
+    "D:\\Code\\PRN212_GASM\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj",
+        "projectUniqueName": "D:\\Code\\PRN212_GASM\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj",
         "projectName": "FUMiniLongChauSystem",
-        "projectPath": "E:\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\prn-project\\FUMiniLongChauSystem\\obj\\",
+        "projectPath": "D:\\Code\\PRN212_GASM\\prn-project\\FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj",
+        "packagesPath": "C:\\Users\\huy\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\PRN212_GASM\\prn-project\\FUMiniLongChauSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,15 +172,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "E:\\prn-project\\BLL\\BLL.csproj": {
-                "projectPath": "E:\\prn-project\\BLL\\BLL.csproj"
+              "D:\\Code\\PRN212_GASM\\prn-project\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\Code\\PRN212_GASM\\prn-project\\BLL\\BLL.csproj"
               }
             }
           }
@@ -210,8 +193,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -235,7 +217,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

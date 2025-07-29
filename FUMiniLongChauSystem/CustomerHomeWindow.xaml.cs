@@ -1,4 +1,5 @@
-﻿using BLL.Services;
+﻿using BLL.DTOs;
+using BLL.Services;
 using DAL.Entities;
 using System.Collections.Generic;
 using System.IO;
@@ -18,11 +19,12 @@ namespace FUMiniLongChauSystem
 
         private List<Category> _categories = new();
         private List<Product> _products = new();
-
-        public CustomerHomeWindow()
+        private User _user;
+        public CustomerHomeWindow(User user)
         {
             InitializeComponent();
             Loaded += CustomerHomeWindow_Loaded;
+            _user = user;
         }
 
         private async void CustomerHomeWindow_Loaded(object sender, RoutedEventArgs e)
@@ -226,6 +228,23 @@ namespace FUMiniLongChauSystem
         private void CartButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Đi đến giỏ hàng (chưa cài đặt)");
+        }
+
+        private void AccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            var infoWindow = new UserInfoWindow(_user);
+            infoWindow.ShowDialog();
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không?", "Đăng xuất", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                LoginWindow loginWindow = new LoginWindow();
+                loginWindow.Show();
+                this.Close(); 
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ public class BaseRepository<T> where T : class
     public BaseRepository()
     {
         _context = new FuminiLongChauSystemContext();
-        _dbSet = (new FuminiLongChauSystemContext()).Set<T>();
+        _dbSet = _context.Set<T>();
     }
 
     public async Task<T?> GetByIdAsync(int id)

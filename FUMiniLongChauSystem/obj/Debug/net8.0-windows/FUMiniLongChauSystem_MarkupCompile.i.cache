@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\
+D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\
 FUMiniLongChauSystem
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-E:\prn-project\FUMiniLongChauSystem\App.xaml
-5810411139
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\App.xaml
+6-1797907255
 5-1897782891
-102022143441
-236518914671
-AdminWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;
+11-1742580977
+2361731421654
+AdminWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;UserInfoWindow.xaml;
 
-False
+True
 

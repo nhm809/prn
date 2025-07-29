@@ -23,24 +23,53 @@
                    Foreground="White"
                    VerticalAlignment="Center" />
 
-                <!-- Nút giỏ hàng -->
-                <Button Content="🛒 Giỏ hàng"
-                Grid.Column="1"
-                Width="130"
-                Height="36"
-                Padding="8,4"
-                Background="White"
-                Foreground="#2E86C1"
-                FontWeight="SemiBold"
-                Margin="0"
-                Cursor="Hand"
-                BorderBrush="#ffffff"
-                BorderThickness="1"
-                Click="CartButton_Click"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Right"/>
+                <!-- Khu vực chứa các nút -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <!-- Nút Thông tin tài khoản -->
+                    <Button Content="👤 Thông tin"
+            Width="130"
+            Height="36"
+            Padding="8,4"
+            Background="White"
+            Foreground="#2E86C1"
+            FontWeight="SemiBold"
+            Cursor="Hand"
+            BorderBrush="#ffffff"
+            BorderThickness="1"
+            Margin="10,0,0,0"
+            Click="AccountButton_Click"/>
+
+                    <!-- Nút Giỏ hàng -->
+                    <Button Content="🛒 Giỏ hàng"
+            Width="130"
+            Height="36"
+            Padding="8,4"
+            Background="White"
+            Foreground="#2E86C1"
+            FontWeight="SemiBold"
+            Cursor="Hand"
+            BorderBrush="#ffffff"
+            BorderThickness="1"
+            Margin="10,0,0,0"
+            Click="CartButton_Click"/>
+
+                    <!-- Nút Đăng xuất -->
+                    <Button Content="🚪 Đăng xuất"
+            Width="130"
+            Height="36"
+            Padding="8,4"
+            Background="White"
+            Foreground="#C0392B"
+            FontWeight="SemiBold"
+            Cursor="Hand"
+            BorderBrush="#ffffff"
+            BorderThickness="1"
+            Margin="10,0,0,0"
+            Click="LogoutButton_Click"/>
+                </StackPanel>
             </Grid>
         </Border>
+
 
         <!-- MAIN CONTENT -->
         <Grid Margin="20">
