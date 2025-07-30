@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -59,6 +60,12 @@ namespace FUMiniLongChauSystem
                 return;
             }
 
+            if (!Regex.IsMatch(phone, @"^0\d{9}$"))
+            {
+                MessageBox.Show("Số điện thoại phải có 10 chữ số và bắt đầu bằng số 0.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             if (!IsStrongPassword(password))
             {
                 MessageBox.Show("Password must be at least 8 characters, contain at least one uppercase letter and one special character.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -98,16 +105,9 @@ namespace FUMiniLongChauSystem
 
         private bool IsValidEmail(string email)
         {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
-            {
-                return false;
-            }
+            return email.EndsWith("@gmail.com", StringComparison.OrdinalIgnoreCase);
         }
+
 
         private bool IsStrongPassword(string password)
         {

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "E:\\prn-project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|e:\\prn-project\\fuminilongchausystem\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|e:\\prn-project\\fuminilongchausystem\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|e:\\prn-project\\fuminilongchausystem\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|e:\\prn-project\\fuminilongchausystem\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|e:\\prn-project\\fuminilongchausystem\\customerhomewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\customerhomewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|e:\\prn-project\\fuminilongchausystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -43,6 +63,68 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterWindow.xaml.cs",
+              "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\RegisterWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniLongChauSystem\\RegisterWindow.xaml.cs",
+              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\RegisterWindow.xaml.cs",
+              "RelativeToolTip": "FUMiniLongChauSystem\\RegisterWindow.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAEIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:33:01.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FUMiniLongChauSystem\\LoginWindow.xaml.cs",
+              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "FUMiniLongChauSystem\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAlwEMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:32:31.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "FUMiniLongChauSystem\\LoginWindow.xaml",
+              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\LoginWindow.xaml",
+              "RelativeToolTip": "FUMiniLongChauSystem\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T14:32:28.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterWindow.xaml",
+              "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\RegisterWindow.xaml",
+              "RelativeDocumentMoniker": "FUMiniLongChauSystem\\RegisterWindow.xaml",
+              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\RegisterWindow.xaml",
+              "RelativeToolTip": "FUMiniLongChauSystem\\RegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T14:32:26.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerHomeWindow.xaml",
+              "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
+              "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
+              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
+              "RelativeToolTip": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T14:32:20.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\appsettings.json",
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\appsettings.json",

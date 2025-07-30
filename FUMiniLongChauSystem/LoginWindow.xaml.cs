@@ -64,7 +64,8 @@ namespace FUMiniLongChauSystem
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             var registerWindow = new RegisterWindow();
-            registerWindow.ShowDialog();
+            registerWindow.Show();
+            this.Close();
         }
     }
 }
