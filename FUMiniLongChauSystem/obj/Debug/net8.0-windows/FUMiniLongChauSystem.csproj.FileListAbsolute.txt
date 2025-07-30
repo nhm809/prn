@@ -182,3 +182,5 @@ D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\FU
 D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\ref\FUMiniLongChauSystem.dll
 D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\UserInfoWindow.g.cs
 D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\UserInfoWindow.baml
+D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\CartWindow.g.cs
+D:\Code\PRN212_GASM\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\CartWindow.baml

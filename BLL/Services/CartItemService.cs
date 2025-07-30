@@ -1,4 +1,5 @@
-﻿using DAL.Entities;
+﻿using BLL.DTOs;
+using DAL.Entities;
 using DAL.Repositories;
 
 namespace BLL.Services;
@@ -28,4 +29,25 @@ public class CartItemService
         _cartItemRepository.Remove(cartItem);
         await _cartItemRepository.SaveChangesAsync();
     }
+    public async Task<List<CartItemDto>> GetCartItemDtosByUserIdAsync(int userId)
+    {
+        var cartItems = await _cartItemRepository.GetAllCartItemWithProductAsync();
+
+        var filtered = cartItems
+            .Where(ci => ci.UserId == userId && ci.Product != null)
+            .Select(ci => new CartItemDto
+            {
+                CartItemId = ci.CartItemId,
+                UserId = ci.UserId,
+                ProductId = ci.ProductId,
+                Quantity = ci.Quantity,
+                Name = ci.Product!.Name,
+                ImageUrl = ci.Product.ImageUrl,
+                Price = ci.Product.Price
+            })
+            .ToList();
+
+        return filtered;
+    }
+
 }
