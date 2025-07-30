@@ -9,4 +9,29 @@ public class ProductRepository : BaseRepository<Product>
     {
         return await _dbSet.Include(p => p.Category).ToListAsync();
     }
+    
+
+    public async Task<Product?> GetByIdWithCategoryAsync(int id)
+    {
+        return await _dbSet.Include(p => p.Category)
+                           .FirstOrDefaultAsync(p => p.ProductId == id);
+    }
+
+    public async Task AddProductAsync(Product product)
+    {
+        await AddAsync(product);
+        await SaveChangesAsync();
+    }
+
+    public async Task UpdateProductAsync(Product product)
+    {
+        Update(product);
+        await SaveChangesAsync();
+    }
+
+    public async Task RemoveProductAsync(Product product)
+    {
+        Remove(product);
+        await SaveChangesAsync();
+    }
 }

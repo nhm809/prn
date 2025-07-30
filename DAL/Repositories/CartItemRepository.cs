@@ -15,6 +15,11 @@ namespace DAL.Repositories
         {
             return await _dbSet.Include(ci => ci.Product).ToListAsync();
         }
+
+        public async Task<bool> ExistsByProductIdAsync(int productId)
+        {
+            return await _dbSet.AnyAsync(c => c.ProductId == productId);
+        }
     }
 
 }

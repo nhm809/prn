@@ -28,4 +28,7 @@ public class ReviewService
         _reviewRepository.Remove(review);
         await _reviewRepository.SaveChangesAsync();
     }
+
+    public async Task<bool> ExistsByProductIdAsync(int productId)
+           => await _reviewRepository.ExistsByProductIdAsync(productId);
 }

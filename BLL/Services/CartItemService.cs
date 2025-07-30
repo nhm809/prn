@@ -50,4 +50,9 @@ public class CartItemService
         return filtered;
     }
 
+
+    public async Task<bool> ExistsByProductIdAsync(int productId)
+            => await _cartItemRepository.ExistsByProductIdAsync(productId);
+
+
 }
