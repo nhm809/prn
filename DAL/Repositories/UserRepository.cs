@@ -12,4 +12,5 @@ public class UserRepository : BaseRepository<User>
             .Include(u => u.Reviews)
             .FirstOrDefaultAsync(u => u.UserId == id);
     }
+
 }

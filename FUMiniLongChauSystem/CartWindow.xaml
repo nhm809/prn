@@ -1,0 +1,91 @@
+﻿<Window x:Class="FUMiniLongChauSystem.CartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Thông tin trong giỏ hàng - Mini Long Châu" SizeToContent="Height"
+        Width="650"
+        WindowStartupLocation="CenterScreen"
+        Background="#f4f4f4">
+    <Grid Margin="20">
+        
+        <Border Background="White" CornerRadius="10"  BorderThickness="2" Padding="20" Margin="10" >
+            
+            <Border.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+            </Border.Effect>
+            <StackPanel>
+                <!-- Nút đóng ở góc trên bên phải -->
+                <Button Content="✖" 
+                    Width="30" Height="30"
+                    Background="Transparent" BorderThickness="0"
+                    FontSize="14"
+                    Foreground="Red"
+                    HorizontalAlignment="Right" VerticalAlignment="Top"
+                    Click="CloseButton_Click"/>
+                <TextBlock Text="🛒 Giỏ hàng của bạn" 
+                       FontSize="20" FontWeight="Bold" 
+                       Foreground="#2E86C1" 
+                       Margin="0,0,0,10" 
+                       HorizontalAlignment="Center"/>
+
+                <Border BorderBrush="#2E86C1" BorderThickness="1" CornerRadius="2" Background="White">
+                    <ListView x:Name="CartListView" Margin="5">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Sản phẩm" Width="140">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Name}" VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="Số lượng" Width="120">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                <Button Content="−" Width="25" Click="Decrease_Click"/>
+                                                <TextBlock Text="{Binding Quantity}" Width="30" TextAlignment="Center"/>
+                                                <Button Content="+" Width="25" Click="Increase_Click"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="Đơn giá" Width="80">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Price, StringFormat={}{0:N0} đ}" HorizontalAlignment="Right"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="Thành tiền" Width="100">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding TotalPrice, StringFormat={}{0:N0} đ}" FontWeight="Bold" Foreground="DarkGreen" HorizontalAlignment="Right"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+
+                                <GridViewColumn Header="" Width="50">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="🗑" Click="Delete_Click"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Border>
+                <!-- Tổng tiền và nút Thanh toán nằm trên 1 dòng -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                    <TextBlock Text="Tổng tiền: " FontWeight="Bold" FontSize="14" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="TotalAmountTextBlock" FontSize="14" FontWeight="Bold" Foreground="DarkGreen" Margin="5,0,20,0" VerticalAlignment="Center"/>
+                    <Button Content="✔ Thanh toán" Background="#27ae60" Foreground="White" Margin="5" Padding="10,5" Click="Checkout_Click"/>
+                </StackPanel>
+            </StackPanel>
+            
+        </Border>
+    </Grid>
+</Window>

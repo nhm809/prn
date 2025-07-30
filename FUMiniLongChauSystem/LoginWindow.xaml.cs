@@ -48,7 +48,7 @@ namespace FUMiniLongChauSystem
                 }
                 else
                 {
-                    CustomerHomeWindow customerHomeWindow = new CustomerHomeWindow();
+                    CustomerHomeWindow customerHomeWindow = new CustomerHomeWindow(user);
                     customerHomeWindow.Show();
                 }
 

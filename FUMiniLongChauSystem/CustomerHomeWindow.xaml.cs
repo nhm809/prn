@@ -1,4 +1,5 @@
-﻿using BLL.Services;
+﻿using BLL.DTOs;
+using BLL.Services;
 using DAL.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,19 +17,22 @@ namespace FUMiniLongChauSystem
     {
         private readonly CategoryService _categoryService = new();
         private readonly ProductService _productService = new();
+        private readonly CartItemService _cartItemService = new();
 
         private List<Category> _categories = new();
         private List<Product> _products = new();
-
         private List<Product> _filteredProducts = new();
         private const int ItemsPerPage = 9;
         private int _currentPage = 1;
         private int _totalPages = 1;
 
-        public CustomerHomeWindow()
+        private User _user;
+
+        public CustomerHomeWindow(User user)
         {
             InitializeComponent();
             Loaded += CustomerHomeWindow_Loaded;
+            _user = user;
         }
 
         private async void CustomerHomeWindow_Loaded(object sender, RoutedEventArgs e)
@@ -235,12 +239,33 @@ namespace FUMiniLongChauSystem
             return border;
         }
 
-        private void AddToCartButton_Click(object sender, RoutedEventArgs e)
+        private async void AddToCartButton_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button button && button.Tag is Product product)
             {
+                // Kiểm tra xem user đã có sản phẩm này trong giỏ chưa
+                var existingItems = await _cartItemService.GetAllAsync();
+                var existingItem = existingItems
+                    .FirstOrDefault(c => c.UserId == _user.UserId && c.ProductId == product.ProductId);
+
+                if (existingItem != null)
+                {
+                    existingItem.Quantity += 1;
+                    await _cartItemService.UpdateAsync(existingItem);
+                }
+                else
+                {
+                    var cartItem = new CartItem
+                    {
+                        UserId = _user.UserId,
+                        ProductId = product.ProductId,
+                        Quantity = 1
+                    };
+
+                    await _cartItemService.AddAsync(cartItem);
+                }
+
                 MessageBox.Show($"Đã thêm '{product.Name}' vào giỏ hàng.");
-                // TODO: Gọi CartItemService.AddAsync nếu muốn lưu thật
             }
         }
 
@@ -271,7 +296,14 @@ namespace FUMiniLongChauSystem
 
         private void CartButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Đi đến giỏ hàng (chưa cài đặt)");
+            var cartWindow = new CartWindow(_user);
+            cartWindow.ShowDialog();
+        }
+
+        private void AccountButton_Click(object sender, RoutedEventArgs e)
+        {
+            var infoWindow = new UserInfoWindow(_user);
+            infoWindow.ShowDialog();
         }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
@@ -279,12 +311,11 @@ namespace FUMiniLongChauSystem
             var result = MessageBox.Show("Bạn có chắc muốn đăng xuất không?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
             {
-                 var loginWindow = new LoginWindow();
+                var loginWindow = new LoginWindow();
                 loginWindow.Show();
                 this.Close();
             }
         }
-
 
     }
 }

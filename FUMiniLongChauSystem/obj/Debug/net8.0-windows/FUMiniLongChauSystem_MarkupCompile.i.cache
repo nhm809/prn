@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 E:\prn-project\FUMiniLongChauSystem\App.xaml
-5810411139
+788331211
 15515237710
-102022143441
+12-1229035530
 236518914671
-AdminWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;
+AdminWindow.xaml;CartWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;UserInfoWindow.xaml;
 
-False
+True
 
