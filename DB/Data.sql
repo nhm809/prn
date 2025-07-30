@@ -32,7 +32,7 @@ VALUES
 -- USERS
 INSERT INTO Users (FullName, Email, PasswordHash, Phone, Role)
 VALUES
-(N'Nguyễn Văn A', 'admin@FUMiniTikiSystem.com', '123', '0900000001', 'Admin'),
+(N'Admin', 'admin@FUMiniTikiSystem.com', '123', '0900000001', 'Admin'),
 (N'Nguyễn Hữu Mỹ', 'mexnguyen894@gmail.com', '123', '0979298904', 'Customer');
 
 -- ORDERS

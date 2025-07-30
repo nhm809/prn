@@ -9,15 +9,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Calcium.jpg" />
+    <None Remove="Assets\Cetirizin.jpg" />
+    <None Remove="Assets\Dextro.jpg" />
     <None Remove="Assets\Efferalgan.jpg" />
     <None Remove="Assets\Gastropulgite.jpg" />
     <None Remove="Assets\logo.png" />
     <None Remove="Assets\Loratadin.jpg" />
+    <None Remove="Assets\Omeprazol.jpg" />
+    <None Remove="Assets\Panadol.jpg" />
     <None Remove="Assets\Paracetamol.jpg" />
+    <None Remove="Assets\Smecta.jpg" />
+    <None Remove="Assets\Terpin.jpg" />
+    <None Remove="Assets\Tiffy.jpg" />
     <None Remove="Assets\VitaminC.jpg" />
+    <None Remove="Assets\VitaminD3.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\Calcium.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cetirizin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Dextro.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Efferalgan.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -27,10 +45,28 @@
     <Content Include="Assets\Loratadin.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Omeprazol.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Panadol.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Paracetamol.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Smecta.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Terpin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiffy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\VitaminC.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\VitaminD3.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -40,9 +76,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\logo.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
+    <Content Include="Assets\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

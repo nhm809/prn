@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
               "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
               "RelativeToolTip": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAgwN0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkBAAAAAAAAAAA1wBoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T11:38:50.943Z",
               "EditorCaption": ""
@@ -63,10 +63,11 @@
               "Title": "CustomerHomeWindow.xaml",
               "DocumentMoniker": "E:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
-              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
-              "RelativeToolTip": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
+              "ToolTip": "E:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml*",
+              "RelativeToolTip": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-28T11:38:40.063Z"
+              "WhenOpened": "2025-07-28T11:38:40.063Z",
+              "EditorCaption": ""
             }
           ]
         }
