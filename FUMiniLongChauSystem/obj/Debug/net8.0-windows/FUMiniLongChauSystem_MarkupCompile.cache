@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
+D:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\
+=======
 D:\prn-project\FUMiniLongChauSystem\obj\Debug\net8.0-windows\
+>>>>>>> 4f6360aadd998528104bdd8bb07d3dc9f588fdf0
 FUMiniLongChauSystem
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
+D:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\App.xaml
+11-1325995016
+8-536791222
+14-941233600
+239-1624360540
+AdminWindow.xaml;CartWindow.xaml;ConfirmCheckoutWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;OrderDetailWindow.xaml;OrderHistoryWindow.xaml;PaymentWindow.xaml;RegisterWindow.xaml;UserInfoWindow.xaml;
+=======
 D:\prn-project\FUMiniLongChauSystem\App.xaml
 11-538735100
 15515237710
 141317695652
 2391895558231
 AddAndUpdateWindow.xaml;AdminWindow.xaml;CartWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ProductDetailWindow.xaml;ProductEditWindow.xaml;ProductManagementWindow.xaml;RegisterWindow.xaml;UserInfoWindow.xaml;
+>>>>>>> 4f6360aadd998528104bdd8bb07d3dc9f588fdf0
 
 False
 

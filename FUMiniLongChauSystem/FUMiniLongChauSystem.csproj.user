@@ -11,6 +11,9 @@
     <Compile Update="CartWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ConfirmCheckoutWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CustomerHomeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +27,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="ProductManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OrderHistoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PaymentWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="RegisterWindow.xaml.cs">

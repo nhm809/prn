@@ -333,5 +333,11 @@ namespace FUMiniLongChauSystem
             }
         }
 
+        private void ViewOrdersButton_Click(object sender, RoutedEventArgs e)
+        {
+            var orderWindow = new OrderHistoryWindow(_user.UserId);
+            orderWindow.ShowDialog();
+        }
+
     }
 }

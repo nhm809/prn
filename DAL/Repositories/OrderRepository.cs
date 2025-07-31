@@ -17,6 +17,17 @@ namespace DAL.Repositories
                 .Include(o => o.Payments)
                 .FirstOrDefaultAsync(o => o.OrderId == id);
         }
+
+        public async Task UpdateOrderStatusAsync(int orderId, string status)
+        {
+            var order = await GetByIdAsync(orderId);
+            if (order != null)
+            {
+                order.Status = status;
+                Update(order);
+                await SaveChangesAsync();
+            }
+        }
     }
 
 }

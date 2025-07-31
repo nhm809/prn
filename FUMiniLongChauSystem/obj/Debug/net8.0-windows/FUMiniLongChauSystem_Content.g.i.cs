@@ -21,7 +21,13 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/terpin.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/tiffy.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/vitaminc.jpg")]
+<<<<<<< HEAD
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+=======
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/vitamind3.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/logo.png")]
+>>>>>>> 4f6360aadd998528104bdd8bb07d3dc9f588fdf0
 
 
