@@ -53,6 +53,19 @@
             Margin="10,0,0,0"
             Click="CartButton_Click"/>
 
+                    <Button Content="📄 Đơn hàng"
+                        Width="130"
+                        Height="36"
+                        Padding="8,4"
+                        Background="White"
+                        Foreground="#2E86C1"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"
+                        BorderBrush="#ffffff"
+                        BorderThickness="1"
+                        Margin="10,0,0,0"
+                        Click="ViewOrdersButton_Click"/>
+
                     <!-- Nút Đăng xuất -->
                     <Button Content="🚪 Đăng xuất"
             Width="130"

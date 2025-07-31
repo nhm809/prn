@@ -111,11 +111,22 @@ namespace FUMiniLongChauSystem
             }).ToList();
 
         }
-        private void Checkout_Click(object sender, RoutedEventArgs e)
+        private async void Checkout_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Thanh toán thành công! 🎉", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            // Hoặc mở cửa sổ thanh toán chi tiết khác
+            var cartDtos = await _cartItemService.GetCartItemDtosByUserIdAsync(_user.UserId);
+
+            if (cartDtos == null || !cartDtos.Any())
+            {
+                MessageBox.Show("Giỏ hàng trống!");
+                return;
+            }
+
+            var confirmWindow = new ConfirmCheckoutWindow(_user, cartDtos);
+            confirmWindow.ShowDialog();
+            // Sau khi thanh toán xong → đóng giỏ hàng
+            this.Close();
         }
+
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {

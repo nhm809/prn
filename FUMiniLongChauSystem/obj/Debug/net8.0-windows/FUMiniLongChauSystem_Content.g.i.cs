@@ -13,5 +13,8 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/loratadin.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/paracetamol.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/vitaminc.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("webview2loader.dll")]
 
 
