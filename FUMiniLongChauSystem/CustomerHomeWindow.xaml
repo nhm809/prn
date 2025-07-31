@@ -89,30 +89,48 @@
             </Border>
 
             <!-- PRODUCT AREA -->
-            <StackPanel Grid.Column="1" Margin="20,0,0,0">
+            <Grid Grid.Column="1" Margin="20,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Search bar -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Sorting -->
+                    <RowDefinition Height="*"/>
+                    <!-- Product list -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Pagination -->
+                </Grid.RowDefinitions>
+
                 <!-- Search bar -->
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                    <TextBox x:Name="SearchTextBox"
-                             Width="500"
-                             Height="32"
-                             FontSize="14"
-                             Padding="8,4"
-                             VerticalAlignment="Center"
-                             ToolTip="Nhập tên thuốc để tìm kiếm..."/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+                    <Grid Width="500" Height="32">
+                        <TextBox x:Name="SearchTextBox"
+                     FontSize="14"
+                     Padding="8,4"
+                     VerticalAlignment="Center"
+                     TextChanged="SearchTextBox_TextChanged"/>
+                        <TextBlock x:Name="SearchPlaceholder"
+                       Text="🔍 Nhập tên thuốc hoặc mô tả để tìm kiếm..."
+                       Foreground="Gray"
+                       Margin="10,0,0,0"
+                       VerticalAlignment="Center"
+                       IsHitTestVisible="False"
+                       Visibility="Visible"/>
+                    </Grid>
                     <Button Content="🔍"
-                            Width="40"
-                            Height="32"
-                            Margin="8,0,0,0"
-                            Click="SearchButton_Click"
-                            ToolTip="Tìm kiếm"
-                            Background="#2E86C1"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            Cursor="Hand"/>
+                Width="40"
+                Height="32"
+                Margin="8,0,0,0"
+                Click="SearchButton_Click"
+                ToolTip="Tìm kiếm"
+                Background="#2E86C1"
+                Foreground="White"
+                FontWeight="Bold"
+                Cursor="Hand"/>
                 </StackPanel>
 
                 <!-- Sorting -->
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+                <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
                     <TextBlock Text="Sắp xếp:" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="SemiBold"/>
                     <ComboBox Width="160" Height="32" x:Name="SortComboBox" SelectionChanged="SortComboBox_SelectionChanged">
                         <ComboBoxItem Content="Bán chạy" IsSelected="True"/>
@@ -122,17 +140,18 @@
                 </StackPanel>
 
                 <!-- Product List -->
-                <ScrollViewer VerticalScrollBarVisibility="Auto" Height="500">
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
                     <WrapPanel x:Name="ProductWrapPanel" ItemWidth="240" ItemHeight="Auto" Margin="0,0,0,20"/>
                 </ScrollViewer>
 
                 <!-- Pagination -->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
                     <Button Content="←" Width="32" Height="32" Click="PrevPage_Click" Margin="5"/>
                     <TextBlock x:Name="PageInfoTextBlock" VerticalAlignment="Center" FontWeight="Bold" Margin="10,0"/>
                     <Button Content="→" Width="32" Height="32" Click="NextPage_Click" Margin="5"/>
                 </StackPanel>
-            </StackPanel>
+            </Grid>
+
         </Grid>
     </DockPanel>
 </Window>

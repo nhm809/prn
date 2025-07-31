@@ -68,7 +68,11 @@ namespace FUMiniLongChauSystem
             var keyword = SearchTextBox?.Text?.Trim().ToLower();
             if (!string.IsNullOrEmpty(keyword))
             {
-                filtered = filtered.Where(p => p.Name.ToLower().Contains(keyword)).ToList();
+                filtered = filtered.Where(p =>
+                        p.Name.ToLower().Contains(keyword) ||
+                        (p.Description?.ToLower().Contains(keyword) ?? false)
+                    ).ToList();
+
             }
 
             var selectedSort = (SortComboBox.SelectedItem as ComboBoxItem)?.Content?.ToString();
@@ -134,6 +138,15 @@ namespace FUMiniLongChauSystem
             }
         }
 
+        private void SearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (SearchPlaceholder != null)
+            {
+                SearchPlaceholder.Visibility = string.IsNullOrWhiteSpace(SearchTextBox.Text)
+                    ? Visibility.Visible
+                    : Visibility.Collapsed;
+            }
+        }
         private UIElement CreateProductUI(Product product)
         {
             var border = new Border

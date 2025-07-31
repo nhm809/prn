@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\semester5\PRN212\prn-project\FUMiniLongChauSystem\obj\Release\net8.0-windows\
+D:\prn-project\FUMiniLongChauSystem\obj\Release\net8.0-windows\
 FUMiniLongChauSystem
 none
 false
-TRACE;RELEASE;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-E:\semester5\PRN212\prn-project\FUMiniLongChauSystem\App.xaml
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+D:\prn-project\FUMiniLongChauSystem\App.xaml
 11-538735100
 15515237710
 14-942392859
-2361843455855
+199-180492441
 AddAndUpdateWindow.xaml;AdminWindow.xaml;CartWindow.xaml;CustomerHomeWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ProductDetailWindow.xaml;ProductEditWindow.xaml;ProductManagementWindow.xaml;RegisterWindow.xaml;UserInfoWindow.xaml;
 
 True

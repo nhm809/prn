@@ -82,6 +82,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

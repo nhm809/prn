@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FUMiniLongChauSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8b52153d1c6457a630e984b368dada699ddabac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+804f18befb9442bb968425bb1f86acd3a5d26c3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FUMiniLongChauSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FUMiniLongChauSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

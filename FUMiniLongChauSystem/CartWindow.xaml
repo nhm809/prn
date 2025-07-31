@@ -39,17 +39,27 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
 
-                                <GridViewColumn Header="Số lượng" Width="120">
+                                <!-- Cột số lượng -->
+                                <GridViewColumn Header="Số lượng" Width="140">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                                <Button Content="−" Width="25" Click="Decrease_Click"/>
-                                                <TextBlock Text="{Binding Quantity}" Width="30" TextAlignment="Center"/>
-                                                <Button Content="+" Width="25" Click="Increase_Click"/>
+                                                <Button Content="−" Width="25" Click="Decrease_Click" Tag="{Binding CartItemId}"/>
+
+                                                <TextBox Width="40"
+                                                 Text="{Binding Quantity, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                                                 HorizontalContentAlignment="Center"
+                                                 Margin="5,0"
+                                                 Tag="{Binding CartItemId}"
+                                                 LostFocus="QuantityTextBox_LostFocus"
+                                                 PreviewTextInput="QuantityTextBox_PreviewTextInput"/>
+
+                                                <Button Content="+" Width="25" Click="Increase_Click" Tag="{Binding CartItemId}"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
+
 
                                 <GridViewColumn Header="Đơn giá" Width="80">
                                     <GridViewColumn.CellTemplate>
@@ -67,10 +77,11 @@
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>
 
+                                <!-- Cột xoá -->
                                 <GridViewColumn Header="" Width="50">
                                     <GridViewColumn.CellTemplate>
                                         <DataTemplate>
-                                            <Button Content="🗑" Click="Delete_Click"/>
+                                            <Button Content="🗑" Click="Delete_Click" Tag="{Binding CartItemId}"/>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
                                 </GridViewColumn>

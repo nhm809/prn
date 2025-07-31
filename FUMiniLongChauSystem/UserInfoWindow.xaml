@@ -1,59 +1,72 @@
 ﻿<Window x:Class="FUMiniLongChauSystem.UserInfoWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FUMiniLongChauSystem"
-        mc:Ignorable="d"
-        Title="Thông tin tài khoản - Mini Long Châu" Height="350" Width="330"
+        Title="Thông tin tài khoản - Mini Long Châu" Height="500" Width="360"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid Background="#F9F9F9">
-    <!-- Border bao quanh toàn bộ nội dung -->
-    <Border Background="White" CornerRadius="10"  BorderThickness="2" Padding="20" Margin="10" >
+        <Border Background="White" CornerRadius="10" BorderThickness="2" Padding="20" Margin="10">
             <Border.Effect>
                 <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
             </Border.Effect>
+
             <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            <TextBlock Text="Thông tin tài khoản" 
-                       FontSize="20" FontWeight="Bold" Foreground="#2E86C1" 
-                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <!-- Tiêu đề -->
+                <TextBlock Text="Thông tin tài khoản"
+                           FontSize="20" FontWeight="Bold" Foreground="#2E86C1"
+                           HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
-            <StackPanel Grid.Row="1" VerticalAlignment="Top" >
-                <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Họ tên:" FontWeight="SemiBold"/>
-                    <TextBox x:Name="txtFullName" Padding="5"/>
+                <!-- Nội dung có thể cuộn -->
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <StackPanel VerticalAlignment="Top" Margin="0,0,0,10">
+                        <!-- Thông tin người dùng -->
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                            <TextBlock Text="Họ tên:" FontWeight="SemiBold"/>
+                            <TextBox x:Name="txtFullName" Padding="5"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                            <TextBlock Text="Email:" FontWeight="SemiBold"/>
+                            <TextBox x:Name="txtEmail" IsReadOnly="True" Background="#EEE" Padding="5"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="0,0,0,20">
+                            <TextBlock Text="Số điện thoại:" FontWeight="SemiBold"/>
+                            <TextBox x:Name="txtPhone" Padding="5"/>
+                        </StackPanel>
+
+                        <!-- Vùng đổi mật khẩu -->
+                        <Expander Header="🔐 Đổi mật khẩu" FontWeight="SemiBold">
+                            <StackPanel Margin="0,10,0,0">
+                                <TextBlock Text="Mật khẩu hiện tại:"/>
+                                <PasswordBox x:Name="OldPasswordBox" Padding="5" Margin="0,0,0,10"/>
+
+                                <TextBlock Text="Mật khẩu mới:"/>
+                                <PasswordBox x:Name="NewPasswordBox" Padding="5" Margin="0,0,0,10"/>
+
+                                <TextBlock Text="Xác nhận mật khẩu mới:"/>
+                                <PasswordBox x:Name="ConfirmPasswordBox" Padding="5"/>
+                            </StackPanel>
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <!-- Nút thao tác -->
+                <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                    <Button Content="Huỷ" Width="100" Height="35"
+                            Background="Gray" Foreground="White"
+                            Margin="0,0,50,0"
+                            Click="CancelButton_Click"/>
+                    <Button Content="Cập nhật" Width="100" Height="35"
+                            Background="#2E86C1" Foreground="White"
+                            Click="UpdateButton_Click"/>
                 </StackPanel>
-
-                <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Email:" FontWeight="SemiBold"/>
-                    <TextBox x:Name="txtEmail" IsReadOnly="True" Background="#EEE" Padding="5"/>
-                </StackPanel>
-
-                <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Số điện thoại:" FontWeight="SemiBold" />
-                    <TextBox x:Name="txtPhone" Padding="5"/>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0" >
-                <!-- Nút Huỷ -->
-                <Button Content="Huỷ" Width="100" Height="35"
-                        Background="Gray" Foreground="White"
-                        Margin="0,0,50,0"
-                        Click="CancelButton_Click"/>
-
-                <!-- Nút Cập nhật -->
-                <Button Content="Cập nhật" Width="100" Height="35"
-                        Background="#2E86C1" Foreground="White"
-                        Click="UpdateButton_Click"/>
-            </StackPanel>
-        </Grid>
-    </Border>
+            </Grid>
+        </Border>
     </Grid>
 </Window>
