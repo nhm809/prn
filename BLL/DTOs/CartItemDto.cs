@@ -15,6 +15,8 @@ namespace BLL.DTOs
         public string Name { get; set; } = null!;
         public string? ImageUrl { get; set; }
         public decimal Price { get; set; }
+        public decimal TotalPrice => Price * Quantity;
+
 
     }
 

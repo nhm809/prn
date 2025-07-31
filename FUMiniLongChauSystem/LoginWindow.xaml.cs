@@ -1,7 +1,9 @@
 ﻿using BLL.Services;
 using DAL.Entities;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,27 +36,23 @@ namespace FUMiniLongChauSystem
             string email = EmailTextBox.Text.Trim();
             string password = PasswordBox.Password.Trim();
 
+            var (adminEmail, adminPassword) = GetAdminCredentials();
+            if (email == adminEmail && password == adminPassword)
+            {
+                AdminWindow adminWindow = new AdminWindow();
+                adminWindow.Show();
+                this.Hide();
+                return;
+            }
             var users = await _userService.GetAllAsync();
             var user = users.FirstOrDefault(u => u.Email == email && u.PasswordHash == password);
 
             if (user != null)
             {
-                var role = user.Role;
-
-                if (role == "Admin")
-                {
-                    AdminWindow adminWindow = new AdminWindow();
-                    adminWindow.Show();
-                }
-                else
-                {
-                    CustomerHomeWindow customerHomeWindow = new CustomerHomeWindow(user);
-                    customerHomeWindow.Show();
-                }
-
+                CustomerHomeWindow customerHomeWindow = new CustomerHomeWindow(user);
+                customerHomeWindow.Show();
                 this.Close();
             }
-
             else
             {
                 MessageBox.Show("Invalid email or password.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -63,8 +61,22 @@ namespace FUMiniLongChauSystem
 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            var registerWindow = new RegisterWindow();
-            registerWindow.ShowDialog();
+            var registerWindow = new RegisterWindow();  
+            registerWindow.Show();
+            this.Close();
+        }
+
+        private (string Email, string Password) GetAdminCredentials()
+        {
+            var exePath = AppDomain.CurrentDomain.BaseDirectory;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(exePath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            IConfiguration config = builder.Build();
+            var email = config["DefaultAdminAccount:Email"];
+            var password = config["DefaultAdminAccount:Password"];
+            return (email, password);
         }
     }
 }

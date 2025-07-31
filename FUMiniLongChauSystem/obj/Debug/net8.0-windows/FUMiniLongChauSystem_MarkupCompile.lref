@@ -1,8 +1,17 @@
 ﻿
 
+<<<<<<< HEAD
 FD:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\AdminWindow.xaml;;
 FD:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\ConfirmCheckoutWindow.xaml;;
 FD:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\MainWindow.xaml;;
 FD:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\PaymentWindow.xaml;;
 FD:\FPTU\SU25\PRN212\prn-project\FUMiniLongChauSystem\UserInfoWindow.xaml;;
+=======
+FD:\prn-project\FUMiniLongChauSystem\AddAndUpdateWindow.xaml;;
+FD:\prn-project\FUMiniLongChauSystem\AdminWindow.xaml;;
+FD:\prn-project\FUMiniLongChauSystem\MainWindow.xaml;;
+FD:\prn-project\FUMiniLongChauSystem\ProductDetailWindow.xaml;;
+FD:\prn-project\FUMiniLongChauSystem\ProductEditWindow.xaml;;
+FD:\prn-project\FUMiniLongChauSystem\ProductManagementWindow.xaml;;
+>>>>>>> 4f6360aadd998528104bdd8bb07d3dc9f588fdf0
 

@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FUMiniLongChauSystem"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="450" Width="800">
+        Title="Admin - User Management" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="LogoutButton" Content="Đăng xuất" Width="100" Margin="25,39,675,365" Click="LogoutButton_Click"/>
+        <Button Content="Manager Product" Click="ManageProductButton_Click" Margin="400,44,290,341"/>
+        <DataGrid x:Name="UsersDataGrid" AutoGenerateColumns="False" Margin="10,77,400,35" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding UserId}" Width="50"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding FullName}" Width="80"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="80"/>
+                <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="120"/>
+                <DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="60"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10">
+            <Button Content="Delete" Width="80" Click="DeleteUser_Click"/>
+            <Button Content="Edit" Width="80" Click="EditUser_Click"/>
+            <Button Content="Add" Width="80" Click="AddUser_Click"/>
+            <Button Content="Details" Width="80" Click="DetailsUser_Click"/>
+
+        </StackPanel>
     </Grid>
 </Window>
