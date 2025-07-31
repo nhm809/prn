@@ -100,7 +100,7 @@ namespace FUMiniLongChauSystem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FUMiniLongChauSystem;component/customerhomewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FUMiniLongChauSystem;V1.0.0.0;component/customerhomewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CustomerHomeWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

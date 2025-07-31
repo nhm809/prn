@@ -146,6 +146,9 @@ namespace FUMiniLongChauSystem
                     ? Visibility.Visible
                     : Visibility.Collapsed;
             }
+
+            FilterAndDisplayProducts();
+
         }
         private UIElement CreateProductUI(Product product)
         {

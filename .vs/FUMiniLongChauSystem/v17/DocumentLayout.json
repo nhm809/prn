@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\prn-project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|d:\\prn-project\\fuminilongchausystem\\customerhomewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\customerhomewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|d:\\prn-project\\fuminilongchausystem\\customerhomewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\customerhomewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3150A48-FFC9-4FC7-B904-8AFE40F4288E}|BLL\\BLL.csproj|d:\\prn-project\\bll\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3150A48-FFC9-4FC7-B904-8AFE40F4288E}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\cartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|d:\\prn-project\\fuminilongchausystem\\customerhomewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\customerhomewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|d:\\prn-project\\fuminilongchausystem\\cartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\cartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|d:\\prn-project\\fuminilongchausystem\\customerhomewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|solutionrelative:fuminilongchausystem\\customerhomewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAFA729F-8FD1-4B3B-8BFB-57A2250CE914}|FUMiniLongChauSystem\\FUMiniLongChauSystem.csproj|d:\\prn-project\\fuminilongchausystem\\userinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CartItemService.cs",
               "DocumentMoniker": "D:\\prn-project\\BLL\\Services\\CartItemService.cs",
               "RelativeDocumentMoniker": "BLL\\Services\\CartItemService.cs",
@@ -170,25 +170,24 @@
               "RelativeToolTip": "BLL\\Services\\CartItemService.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAADwvykAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T02:01:05.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T02:01:05.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CartItemDto.cs",
               "DocumentMoniker": "D:\\prn-project\\BLL\\DTOs\\CartItemDto.cs",
               "RelativeDocumentMoniker": "BLL\\DTOs\\CartItemDto.cs",
               "ToolTip": "D:\\prn-project\\BLL\\DTOs\\CartItemDto.cs",
               "RelativeToolTip": "BLL\\DTOs\\CartItemDto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T01:57:51.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CartWindow.xaml.cs",
               "DocumentMoniker": "D:\\prn-project\\FUMiniLongChauSystem\\CartWindow.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CartWindow.xaml.cs",
@@ -196,20 +195,18 @@
               "RelativeToolTip": "FUMiniLongChauSystem\\CartWindow.xaml.cs",
               "ViewState": "AgIAAHoAAAAAAAAAAAAnwGAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T01:43:49.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:43:49.044Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CartWindow.xaml",
               "DocumentMoniker": "D:\\prn-project\\FUMiniLongChauSystem\\CartWindow.xaml",
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CartWindow.xaml",
               "ToolTip": "D:\\prn-project\\FUMiniLongChauSystem\\CartWindow.xaml",
               "RelativeToolTip": "FUMiniLongChauSystem\\CartWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T01:43:33.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:43:33.404Z"
             },
             {
               "$type": "Document",
@@ -221,8 +218,7 @@
               "RelativeToolTip": "FUMiniLongChauSystem\\RegisterWindow.xaml.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAuwD4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T01:41:04.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:41:04.093Z"
             },
             {
               "$type": "Document",
@@ -234,8 +230,7 @@
               "RelativeToolTip": "FUMiniLongChauSystem\\UserInfoWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T01:15:54.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:15:54.447Z"
             },
             {
               "$type": "Document",
@@ -246,8 +241,7 @@
               "ToolTip": "D:\\prn-project\\FUMiniLongChauSystem\\UserInfoWindow.xaml",
               "RelativeToolTip": "FUMiniLongChauSystem\\UserInfoWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T01:15:50.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:15:50.044Z"
             },
             {
               "$type": "Document",
@@ -258,8 +252,7 @@
               "ToolTip": "D:\\prn-project\\FUMiniLongChauSystem\\RegisterWindow.xaml",
               "RelativeToolTip": "FUMiniLongChauSystem\\RegisterWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T01:06:40.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:06:40.936Z"
             },
             {
               "$type": "Document",
@@ -270,8 +263,7 @@
               "ToolTip": "D:\\prn-project\\FUMiniLongChauSystem\\LoginWindow.xaml",
               "RelativeToolTip": "FUMiniLongChauSystem\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-31T01:05:31.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T01:05:31.501Z"
             },
             {
               "$type": "Document",
@@ -283,25 +275,24 @@
               "RelativeToolTip": "DAL\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T00:56:23.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-31T00:56:23.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CustomerHomeWindow.xaml.cs",
               "DocumentMoniker": "D:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
               "ToolTip": "D:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
               "RelativeToolTip": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml.cs",
-              "ViewState": "AgIAAC4BAAAAAAAAAAAuwDgBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAIA4wJUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T00:49:09.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "CustomerHomeWindow.xaml",
               "DocumentMoniker": "D:\\prn-project\\FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
               "RelativeDocumentMoniker": "FUMiniLongChauSystem\\CustomerHomeWindow.xaml",
@@ -321,8 +312,7 @@
               "RelativeToolTip": "FUMiniLongChauSystem\\ProductManagementWindow.xaml.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAwwEoAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:26:44.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T18:26:44.451Z"
             },
             {
               "$type": "Document",
@@ -334,8 +324,7 @@
               "RelativeToolTip": "FUMiniLongChauSystem\\AdminWindow.xaml.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAowHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:18:54.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T18:18:54.478Z"
             },
             {
               "$type": "Document",
@@ -346,8 +335,7 @@
               "ToolTip": "D:\\prn-project\\FUMiniLongChauSystem\\AdminWindow.xaml",
               "RelativeToolTip": "FUMiniLongChauSystem\\AdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-30T18:18:19.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T18:18:19.247Z"
             }
           ]
         },
